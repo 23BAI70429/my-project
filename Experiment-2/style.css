@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex; /* Helps in centering the container */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* Ensures the body takes full viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Centers content inside the container */
+    width: 90%; /* Take 90% width on small screens */
+    max-width: 350px; /* Max width for larger screens */
+}
+
+.balance-card {
+    background-color: #e0e0e0; /* Slightly darker gray for the balance card */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.balance-amount {
+    font-size: 2em; /* Larger font size for balance */
+    color: #28a745; /* Green color for balance */
+    margin: 0; /* Remove default paragraph margin */
+    font-weight: bold; /* Make it bold */
+}
+
+button {
+    width: 100%; /* Buttons take full width of their parent */
+    padding: 12px 0; /* Vertical padding, no horizontal */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.deposit-button {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.deposit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.withdraw-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.withdraw-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Basic Responsiveness for smaller screens */
+@media (max-width: 400px) {
+    .container {
+        padding: 15px; /* Slightly less padding on very small screens */
+    }
+
+    button {
+        padding: 10px 0; /* Slightly smaller buttons */
+        font-size: 1em;
+    }
+}
