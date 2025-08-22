@@ -1,0 +1,34 @@
+INTERACTIVE SVG DRAWING TOOL – TEST CASES & VALIDATIONS
+FUNCTIONALITY:
+Allows users to draw shapes (freehand lines) inside an SVG area using the mouse. Shapes are created dynamically with mousedown, extended with mousemove, and finalized on mouseup. Multiple drawings are supported without reloading the page.
+
+COMPONENTS
+HTML Elements:
+    svg#drawingArea: Acts as the drawing canvas.
+    h2: Title of the tool.
+
+JavaScript:
+    startDraw(): Creates a new SVG path on mousedown.
+    draw(): Extends the path with mouse movements (mousemove).
+    stopDraw(): Ends drawing on mouseup or mouseleave.
+    window.onload: Attaches all event listeners when the page loads.
+
+TEST CASES:
+    Click + drag inside canvas: A blue line is drawn following mouse path.
+    Release mouse button: Drawing stops at the release point.
+    Click + drag again: Starts a new drawing without removing the old one.
+    Move mouse without pressing: No shape is created.
+    Drag outside canvas: Drawing stops automatically.
+
+EXPECTED BEHAVIOR:
+    Drawing starts only when the mouse is pressed.
+    Line follows the exact mouse path until released.
+    Multiple drawings can be created.
+    Canvas does not reload or clear automatically.
+
+LEARNING OUTCOMES:
+    Using SVG as a drawing surface.
+    Handling mouse events (mousedown, mousemove, mouseup, mouseleave).
+    Creating and updating SVG elements dynamically with JavaScript.
+    Using attributes (d, stroke, fill) to control SVG paths.
+    Building an interactive UI with real-time updates.

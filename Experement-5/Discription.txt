@@ -1,0 +1,35 @@
+DYNAMIC PRODUCT FILTER WITH DROPDOWN – TEST CASES & VALIDATIONS
+FUNCTIONALITY:
+Filters a product list instantly based on the category selected from a dropdown (Clothing, Electronics, Books, or All). Uses JavaScript DOM manipulation without page reload.
+
+COMPONENTS
+HTML Elements:
+    select#category: Dropdown to choose filter.
+    div#productList: Container for displaying products.
+    h2: Page title.
+
+JavaScript:
+    displayProducts(): Function to update products.
+    window.onload: Shows all products when page loads.
+    dropdown.onchange: Triggers filtering on selection change.
+    forEach: Loops through product list to display matches.
+
+TEST CASES
+    Select All : Show all products.
+    Select Clothing : Show T-Shirt, Jeans.
+    Select Electronics :  Show Headphones, Smartphone.
+    Select Books : Show Novel, Cookbook.
+    Empty list : Shows nothing.
+
+EXPECTED BEHAVIOR:
+    Product list changes immediately when category is selected.
+    Only matching items appear.
+    “All” option resets to full list.
+    Runs without refreshing the page.
+
+LEARNING OUTCOMES
+    Use of dropdown with onchange.
+    DOM updates with innerHTML and element creation.
+    Initial load handling with window.onload.
+    Iteration using forEach.
+    Creating dynamic, interactive UI.
