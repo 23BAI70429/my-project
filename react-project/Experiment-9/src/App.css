@@ -1,0 +1,75 @@
+.library-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 1.5rem;
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(100, 100, 100, 0.1);
+}
+
+.library-management h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.add-book-form {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.add-book-form input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.add-book-form button {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #777;
+  border-radius: 4px;
+  background: #ddd;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.book-item span strong {
+  font-weight: 700;
+}
+
+.remove-btn {
+  padding: 0.3rem 0.7rem;
+  background: #eee;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.no-books {
+  margin-top: 1rem;
+  color: #888;
+  font-style: italic;
+  text-align: center;
+}
+
