@@ -1,0 +1,52 @@
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Player List */
+.player-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Player Card */
+.player-card {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+.player-card:hover {
+  background-color: #f0f0f0;
+}
+
+/* No Players Found */
+.no-players {
+  color: #888;
+  font-style: italic;
+}
